@@ -1,0 +1,44 @@
+{
+  "name": "Watcher",
+  "description": "Financial Action Oversight & Verification on Pi Network Testnet",
+  "version": "1.0.0",
+  "type": "utility",
+  "categories": ["finance", "tools", "institutional"],
+  "website": "https://watcher.pi",
+  "productionUrl": "https://watcher-vb-vyqg2-kx-sa-vh.vercel.app",
+  "pinetUrl": "https://watcher4942.pinet.com",
+  "testnet": true,
+  "permissions": {
+    "username": true,
+    "payments": false
+  },
+  "features": {
+    "readOnly": true,
+    "verification": true,
+    "oversight": true,
+    "evidencePack": true,
+    "liveUpdates": true
+  },
+  "metadata": {
+    "actionTypes": [
+      "VERIFICATION_CHECK",
+      "FUND_TRANSFER",
+      "PAYMENT_SETTLEMENT",
+      "ESCROW_HOLD",
+      "CONTRACT_EXECUTION"
+    ],
+    "statusFlow": [
+      "Idle",
+      "Fetching",
+      "Fetched",
+      "Verified",
+      "Displayed",
+      "Failed"
+    ],
+    "oversightHooks": [
+      "Governance",
+      "Risk",
+      "Compliance"
+    ]
+  }
+}
